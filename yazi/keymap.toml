@@ -1,0 +1,9 @@
+[mgr]
+
+prepend_keymap = [
+  { on = [ "g", "d", "e"], run = "cd ~/Desktop", desc = "Go to Desktop" },
+  { on = [ "g", "d", "o"], run = "cd ~/Downloads", desc = "Go to Downloads" },
+  { on = [ "g", "w" ], run = "cd ~/Documents/Work", desc = "Go to Work" },
+  { on = [ "g", "1" ], run = "cd ~/Documents/Work/DEMOS-MISCAN-Lung", desc = "Go to Ch1" },
+  { on = [ "g", "2" ], run = "cd ~/Documents/Work/HepC-Transmission-Modelling", desc = "Go to Ch2" }
+]

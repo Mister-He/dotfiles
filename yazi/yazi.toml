@@ -1,0 +1,15 @@
+[mgr]
+ratio = [1, 4, 3]
+sort_by = "natural"
+linemode = "mtime"
+
+[preview]
+max_width = 1200
+max_height = 2000
+
+[opener]
+edit = [
+	{ run = "${EDITOR:-nvim} %s", desc = "$EDITOR",      for = "unix", block = true },
+	{ run = "code %s",          desc = "code",         for = "windows", orphan = true },
+	{ run = "code -w %s",       desc = "code (block)", for = "windows", block = true },
+]

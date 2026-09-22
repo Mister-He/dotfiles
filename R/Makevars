@@ -1,0 +1,16 @@
+CC=/opt/homebrew/opt/llvm/bin/clang -fopenmp
+CXX=/opt/homebrew/opt/llvm/bin/clang++ -fopenmp
+
+# Point the linker to the libomp library folder
+LDFLAGS += -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib
+
+# Point the preprocessor to the libomp headers
+CPPFLAGS += -I/opt/homebrew/opt/libomp/include
+
+F77 = /opt/homebrew/bin/gfortran
+FC  = /opt/homebrew/bin/gfortran
+FLIBS = -L/opt/homebrew/lib/gcc/15 -lgfortran -lquadmath
+
+FC=/opt/homebrew/bin/gfortran
+F77=/opt/homebrew/bin/gfortran
+

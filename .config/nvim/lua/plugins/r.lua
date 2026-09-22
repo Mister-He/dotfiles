@@ -17,25 +17,25 @@ return {
       opts.view_df.n_lines = 0
     end,
 
-    keys = {
-      {
-        "<leader>rJ",
-        function()
-          vim.cmd("wincmd J")
-          vim.cmd("resize 15")
-        end,
-        desc = "R console below (15 lines)",
-      },
-
-      {
-        "<leader>rL",
-        function()
-          vim.cmd("wincmd L")
-          vim.cmd("vertical wincmd =")
-        end,
-        desc = "R console right (equal width)",
-      },
-    },
+    -- keys = {
+    --   {
+    --     "<leader>rJ",
+    --     function()
+    --       vim.cmd("wincmd J")
+    --       vim.cmd("resize 15")
+    --     end,
+    --     desc = "R console below (15 lines)",
+    --   },
+    --
+    --   {
+    --     "<leader>rL",
+    --     function()
+    --       vim.cmd("wincmd L")
+    --       vim.cmd("vertical wincmd =")
+    --     end,
+    --     desc = "R console right (equal width)",
+    --   },
+    -- },
   },
 
   {

@@ -1,110 +1,287 @@
-tap "hudochenkov/sshpass"
-tap "romkatv/powerlevel10k"
-brew "gcc"
-brew "armadillo"
-brew "asciiquarium"
-brew "python@3.13"
-brew "autojump"
-brew "automake"
-brew "bat"
-brew "fftw"
-brew "iniparser"
-brew "portaudio"
-brew "cava"
-brew "cbonsai"
-brew "glog"
-brew "ceres-solver"
-brew "clang-format"
-brew "cmake"
-brew "cmatrix"
-brew "coreutils"
-brew "cowsay"
-brew "curl"
-brew "docker"
-brew "ffmpeg"
-brew "fortune"
-brew "fzf"
-brew "git"
-brew "pkgconf"
-brew "hdf5"
-brew "htop"
-brew "libtool"
-brew "imagemagick"
-brew "ipython"
-brew "jp2a"
-brew "jq"
-brew "node"
-brew "jupyterlab"
-brew "lazygit"
-brew "llvm"
-brew "mysql", restart_service: :changed
-brew "neofetch"
-brew "neovim"
-brew "ninja"
-brew "numpy"
-brew "pipx"
-brew "powerlevel10k"
-brew "putty"
-brew "py3cairo"
-brew "python-matplotlib"
-brew "pytorch"
-brew "ruby"
-brew "tailscale"
-brew "tmux"
-brew "yazi"
-brew "zsh"
-brew "hudochenkov/sshpass/sshpass"
-cask "blackhole-2ch"
-cask "font-hack-nerd-font"
-cask "font-meslo-lg-nerd-font"
-cask "kitty"
-cask "microsoft-auto-update"
-cask "microsoft-teams"
-cask "panda"
-vscode "abhishekjha.cool-dark-theme"
-vscode "cweijan.dbclient-jdbc"
-vscode "cweijan.vscode-mysql-client2"
-vscode "esbenp.prettier-vscode"
-vscode "formulahendry.code-runner"
-vscode "formulahendry.vscode-mysql"
-vscode "fortran-lang.linter-gfortran"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "github.github-vscode-theme"
-vscode "github.vscode-github-actions"
-vscode "iamhyc.overleaf-workshop"
-vscode "ivan-bocharov.stan-vscode"
-vscode "jakebathman.mysql-syntax"
-vscode "james-yu.latex-workshop"
-vscode "llvm-vs-code-extensions.vscode-clangd"
-vscode "mechatroner.rainbow-csv"
-vscode "mhutchie.git-graph"
-vscode "mitaki28.vscode-clang"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-toolsai.jupyter"
-vscode "ms-toolsai.jupyter-keymap"
-vscode "ms-toolsai.jupyter-renderers"
-vscode "ms-toolsai.vscode-jupyter-cell-tags"
-vscode "ms-toolsai.vscode-jupyter-slideshow"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode.cmake-tools"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.cpptools-extension-pack"
-vscode "ms-vscode.cpptools-themes"
-vscode "ms-vscode.remote-explorer"
-vscode "openai.chatgpt"
-vscode "rdebugger.r-debugger"
-vscode "reditorsupport.r"
-vscode "reditorsupport.r-syntax"
-vscode "shd101wyy.markdown-preview-enhanced"
-vscode "shopify.ruby-lsp"
-vscode "tialki.tex-preview"
-vscode "twxs.cmake"
-vscode "vadimcn.vscode-lldb"
-vscode "vscodevim.vim"
-vscode "xaver.clang-format"
+abseil
+ada-url
+aom
+apache-arrow
+armadillo
+arpack
+asciiquarium
+at-spi2-core
+autoconf
+autojump
+automake
+aws-c-auth
+aws-c-cal
+aws-c-common
+aws-c-compression
+aws-c-event-stream
+aws-c-http
+aws-c-io
+aws-c-mqtt
+aws-c-s3
+aws-c-sdkutils
+aws-checksums
+aws-crt-cpp
+aws-sdk-cpp
+bash
+bat
+berkeley-db@5
+brotli
+c-ares
+ca-certificates
+cairo
+cava
+cbonsai
+ceres-solver
+certifi
+cffi
+clang-format
+cliamp
+cmake
+cmatrix
+coreutils
+cowsay
+curl
+dav1d
+dbus
+deno
+direnv
+docker
+docker-completion
+eigen
+fd
+ffmpeg
+fftw
+flac
+fmt
+fontconfig
+fortune
+freetype
+fribidi
+fzf
+gcc
+gdbm
+gdk-pixbuf
+gettext
+gflags
+ghostscript
+giflib
+git
+glib
+glog
+gmp
+gnupg
+gnutls
+gpgme
+gpgmepp
+graphite2
+grpc
+gsettings-desktop-schemas
+gtk+3
+harfbuzz
+hdf5
+hdrhistogram_c
+hicolor-icon-theme
+highway
+htop
+hwloc
+icu4c@78
+imagemagick
+imath
+iniparser
+ipython
+isl
+jbig2dec
+jp2a
+jpeg
+jpeg-turbo
+jpeg-xl
+jq
+json-c
+julia
+jupyterlab
+lame
+lazygit
+leptonica
+libaec
+libarchive
+libassuan
+libavif
+libb2
+libblastrampoline
+libdatrie
+libde265
+libdeflate
+libepoxy
+libevent
+libexif
+libffi
+libgcrypt
+libgit2
+libgpg-error
+libheif
+libidn
+libidn2
+libimagequant
+libksba
+libmpc
+libnghttp2
+libnghttp3
+libngtcp2
+libogg
+libomp
+libpng
+libraqm
+libsodium
+libssh2
+libtasn1
+libthai
+libtiff
+libtommath
+libtool
+libunistring
+libusb
+libuv
+libvmaf
+libvorbis
+libvpx
+libx11
+libxau
+libxcb
+libxdmcp
+libxext
+libxfixes
+libxi
+libxrender
+libxtst
+libyaml
+little-cms2
+llhttp
+llvm
+lpeg
+lua
+luajit
+luarocks
+luv
+lz4
+lzo
+m4
+merve
+metis
+mpdecimal
+mpfr
+mpg123
+mysql
+nbytes
+ncurses
+neofetch
+neovim
+nettle
+ninja
+node
+npth
+nspr
+nss
+numpy
+oniguruma
+open-mpi
+openblas
+openblas64
+openexr
+openjpeg
+openjph
+openlibm
+openssl@3
+opus
+p11-kit
+p7zip
+pandoc
+pango
+pcre2
+perl
+pillow
+pinentry
+pipx
+pixman
+pkgconf
+pmix
+poppler
+portaudio
+powerlevel10k
+protobuf
+putty
+py3cairo
+pybind11
+pycparser
+python-matplotlib
+python-tk@3.14
+python@3.13
+python@3.14
+pytorch
+qhull
+r
+re2
+readline
+resvg
+ripgrep
+rpds-py
+rtmpdump
+ruby
+screenresolution
+sdl2-compat
+sdl3
+sevenzip
+sheets
+simdjson
+simdutf
+sleef
+slides
+snappy
+sqlite
+sshpass
+starship
+stow
+suite-sparse
+svt-av1
+tag
+tbb
+tcl-tk
+tectonic
+tesseract
+thrift
+tmux
+tree
+tree-sitter
+tree-sitter-cli
+ttyplot
+unibilium
+utf8proc
+uvwasi
+visidata
+webp
+x264
+x265
+xorgproto
+xz
+yazi
+yt-dlp
+z3
+zeromq
+zlib
+zoxide
+zsh
+zstd
+basictex
+battery
+blackhole-2ch
+claude-code
+codex
+copilot-cli
+crossover
+font-hack-nerd-font
+font-meslo-lg-nerd-font
+font-symbols-only-nerd-font
+kitty
+microsoft-auto-update
+microsoft-teams
+miniconda
+panda

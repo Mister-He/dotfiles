@@ -1,4 +1,4 @@
-![](https://github.com/Mister-He/dotfiles/blob/main/assets/terminal.png?raw=true)
+![](assets/terminal.png)
 
 This is a personal dotfiles repository
 

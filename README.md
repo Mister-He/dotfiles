@@ -17,5 +17,5 @@ Learned a lot from:
     - [GitHub](https://github.com/patricorgi)
     - [Bilibili](https://space.bilibili.com/846392)
 - SalarAlo
-- [Github](https://github.com/SalarAlo)
-- [Youtube](https://www.youtube.com/@SalarAlo08)
+    - [Github](https://github.com/SalarAlo)
+    - [Youtube](https://www.youtube.com/@SalarAlo08)

@@ -33,10 +33,10 @@ return {
 
     -- Set menu
     dashboard.section.buttons.val = {
-      dashboard.button("n", "  > New File", "<cmd>ene<CR>"),
+      dashboard.button("n", "  > New file", "<cmd>ene<CR>"),
       dashboard.button("f", "  > Find file", "<cmd>Telescope find_files<CR>"),
       dashboard.button("e", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("g", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("g", "  > Find word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("q", "  > Quit NeoVim", "<cmd>qa<CR>"),
     }
 

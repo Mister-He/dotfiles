@@ -149,10 +149,39 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+####### Lazy load NVM ####### 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export NVM_DIR="$HOME/.nvm"
+
+_load_nvm() {
+    unfunction nvm node npm npx 2>/dev/null
+
+    [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+}
+
+nvm() {
+    _load_nvm
+    nvm "$@"
+}
+
+node() {
+    _load_nvm
+    node "$@"
+}
+
+npm() {
+    _load_nvm
+    npm "$@"
+}
+
+npx() {
+    _load_nvm
+    npx "$@"
+}
+####### Lazy load NVM ####### 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -167,4 +196,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

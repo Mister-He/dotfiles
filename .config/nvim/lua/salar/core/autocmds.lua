@@ -22,3 +22,19 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 
 transparent_background()
+
+-- Let lazygit to quit with simple "q"
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "lazygit",
+  callback = function(args)
+    vim.keymap.set("n", "q", function()
+      local buf = vim.api.nvim_get_current_buf()
+      local chan = vim.bo[buf].channel
+      if chan and chan ~= 0 then
+        vim.fn.chansend(chan, "q")
+      else
+        vim.api.nvim_win_close(0, true)
+      end
+    end, { buffer = args.buf, desc = "退出 LazyGit" })
+  end,
+})

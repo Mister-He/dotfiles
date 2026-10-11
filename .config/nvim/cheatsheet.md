@@ -284,3 +284,4 @@ Defined as `:commands` in the config; listed here for convenience.
 | `:CppExtractDefinitions` | Extract inline class member definitions into `.cpp` | `lua/salar/tools/cpp_extract.lua` |
 | `:CppExtractFunctionDefinition` | Extract current function definition into `.cpp` | `lua/salar/tools/cpp_extract.lua` |
 | `:CppTrvCtr` | Generate memberwise constructor for current class | `lua/salar/tools/cpp_trivial_constructor.lua` |
+---
